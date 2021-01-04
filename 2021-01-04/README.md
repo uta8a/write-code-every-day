@@ -1,4 +1,4 @@
-# 2020-01-04
+# 2021-01-04
 - terraform backend S3用のcloudformationを書いた。
 - https://www.terraform.io/docs/backends/types/s3.html#multi-account-aws-architecture
   - これによると、tfstateをS3で管理するならS3を立ち上げるのはそのterraformの範囲外であるべきと書かれている。
