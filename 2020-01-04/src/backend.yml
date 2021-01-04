@@ -1,0 +1,27 @@
+# XXXXXX は適宜読み替えてください
+AWSTemplateFormatVersion: '2010-09-09'
+Description: XXXXXX
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: "XXXXXX"
+      AccessControl: Private
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+      LifecycleConfiguration:
+        Rules:
+          - Id: XXXXXX
+            Status: 'Enabled'
+            ExpirationInDays: 90
+Outputs:
+  BucketName:
+    Value: !Ref 'S3Bucket'
+    Description: XXXXXX
