@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>:active</title>
+  <style>
+    a:link {
+      color: blue;
+    }
+
+    /* 未訪問リンク */
+    a:visited {
+      color: purple;
+    }
+
+    /* 訪問済みリンク */
+    a:hover {
+      background: yellow;
+    }
+
+    /* ホバー時 */
+    a:active {
+      color: red;
+    }
+
+    /* アクティブなリンク */
+
+    p:active {
+      background: #eee;
+    }
+
+    /* アクティブな段落 */
+  </style>
+</head>
+
+<body>
+  <p>この段落にはリンクが含まれています。
+    <a href="#">このリンクはクリックすると赤色になります。</a>
+    この段落は段落やリンクをクリックすると灰色になります。
+  </p>
+</body>
+
+</html>

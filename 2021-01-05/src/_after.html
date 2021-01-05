@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>::after</title>
+  <style>
+    .quote {
+      cursor: help;
+      text-decoration: underline;
+      color: orangered;
+    }
+
+    .quote[data-quote]:hover::after {
+      content: attr(data-quote);
+      left: 0;
+      top: 24px;
+      border: 1px black solid;
+      color: black;
+      padding: 5px;
+      font-size: 14px;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <p><span>猫が先、人間は後</span><span class="quote" data-quote="要出典">*1</span></p>
+</body>
+
+</html>
